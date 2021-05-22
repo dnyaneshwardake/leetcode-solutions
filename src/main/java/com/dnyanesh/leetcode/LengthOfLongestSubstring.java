@@ -2,7 +2,7 @@ package com.dnyanesh.leetcode;
 
 public class LengthOfLongestSubstring {
 
-	// length of Longest non repeating substring
+	// length of Longest non repeating substring 
 
 	public static int lengthOfLongestSubstring(String s) {
 		String temp = "";
