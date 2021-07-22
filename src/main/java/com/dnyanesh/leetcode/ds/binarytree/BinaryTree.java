@@ -41,12 +41,24 @@ public class BinaryTree {
 
 	}
 
+	public int getHeight(TreeNode root) {
+
+		TreeNode current = root;
+		if (current == null) {
+			return -1;
+		}
+		return Math.max(getHeight(current.left), getHeight(current.right)) + 1;
+
+	}
+
 	public static void main(String[] args) {
 		BinaryTree b = new BinaryTree();
 		b.addNode(10);
 		b.addNode(20);
 		b.addNode(5);
+		b.addNode(50);
 		b.inorderTraversal(b.root);
+		//System.out.println(b.getHeight(b.root));
 	}
 
 }
